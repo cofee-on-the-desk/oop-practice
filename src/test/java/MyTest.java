@@ -39,6 +39,12 @@ public class MyTest {
         assertThrows(Math.ZeroInNonPositivePowerException.class, () -> Math.power(0, 0));
         assertThrows(Math.ZeroInNonPositivePowerException.class, () -> Math.power(0, -5));
     }
+    
+    @Test
+    public void powerExtra() {
+        assertEquals(1, tryPower(1, 200));
+        assertEquals(0, tryPower(0, 200));
+    }
 
 }
 
