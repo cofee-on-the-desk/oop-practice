@@ -12,6 +12,7 @@ public class MyTest {
 
     @Test
     public void cube() {
+        assertEquals(1, Math.cube(1));
         assertEquals(8, Math.cube(2));
         assertEquals(27, Math.cube(3));
         assertEquals(-125, Math.cube(-5));
